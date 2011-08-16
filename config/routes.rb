@@ -1,4 +1,5 @@
 ChatMockup::Application.routes.draw do
+  resources :chats
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
