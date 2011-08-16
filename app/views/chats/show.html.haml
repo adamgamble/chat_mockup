@@ -1,1 +1,4 @@
 %h1=@chat.name
+=text_area(:chat_room, :body, :cols => 100, :rows => 40)
+%br
+=text_field_tag(:message, nil, :placeholder => "Enter your chat here", :size => 140)
