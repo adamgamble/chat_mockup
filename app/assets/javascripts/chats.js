@@ -14,10 +14,10 @@ function build_message(message_body) {
 }
 
 function send_message(message) {
-  $('#chat').val("");
+  $('#chat').val("")
   $.ajax({
     type: 'POST',
-    url: "/chats/1/message",
+    url: "/chats/" + chat_id + "/message",
     data: "message=" + message
   });
 }
