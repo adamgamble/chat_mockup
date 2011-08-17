@@ -6,7 +6,8 @@
       = yield(:title) || "Untitled"
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
     = stylesheet_link_tag "application"
-    = javascript_include_tag :defaults
+    = javascript_include_tag "application"
+    = javascript_include_tag "http://192.168.248.44:8080/application.js"
     = csrf_meta_tag
     = yield(:head)
 

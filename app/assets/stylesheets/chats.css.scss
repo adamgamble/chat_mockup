@@ -1,3 +1,23 @@
 // Place all the styles related to the chats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.message {
+  border: 1px solid;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#chat_room {
+  width: 500px;
+  border: 1px solid;
+  height: 500px;
+  float:left;
+}
+
+#user_list {
+  margin-left: 10px;
+  border:1px solid;
+  width: 125px;
+  height: 500px;
+  float: left;
+}

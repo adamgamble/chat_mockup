@@ -1,4 +1,12 @@
 %h1=@chat.name
-=text_area(:chat_room, :body, :cols => 100, :rows => 40)
-%br
-=text_field_tag(:message, nil, :placeholder => "Enter your chat here", :size => 140)
+#chat_room
+#user_list
+%div{:style => "clear:both;"}
+=text_field_tag("chat",nil, :placeholder => "Your chat goes here", :size => 95)
+
+:javascript
+  var jug = new Juggernaut;
+  jug.subscribe("#{@chat.id}", function(data){
+    console.log("Got data: " + data);
+    $("#chat_room").append(build_message(data));
+  });
